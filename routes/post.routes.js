@@ -1,6 +1,6 @@
 const express = require("express");
 const requireAuth = require("../middlewares/auth.middleware");
-const { PrismaClient } = require("@prisma/client");
+const { PrismaClient } = require("../mongo-client");
 
 const router = express.Router();
 const prisma = new PrismaClient();
